@@ -3,8 +3,6 @@ header {
 }
 
 nav ul {
-    position: sticky;
-    top: 0;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -86,6 +84,11 @@ p {
     padding: 10px;
 }
  
+p.primer::first-letter{
+    font-size: 150%;
+}
+
+
 ul {
     background-color: rgb(245, 245, 245, 0.5);
     padding: 10px;
@@ -111,13 +114,21 @@ div.gallery {
     margin: 5px;
     float: left;
     width: 200px;
+    transition: width 0.5s;
 }
 
 div.gallery:hover {
     width: 35%;
 }
 
+div.desc{
+    background-color: darkslategray;
+    padding: 15px;
+    text-align: center;
+}
+
 #gallery {
+    padding-left: 50px;
     background-color: rgb(255, 255, 255, 0);
 }
 
@@ -128,12 +139,29 @@ div.gallery img{
 }
 
 aside {
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 100px;
     background-color: darkcyan;
     width: 30%;
     float: left;
 }
 
-Aside img {
+aside a{
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: steelblue;
+    padding: 5px;
+    font-size: 20px;
+}
+
+aside a:hover{
+    background-color: white;
+    color: black;
+}
+
+aside img {
     margin-right: 50px;
     margin-left: 50px;
     width: 275px;
@@ -143,14 +171,42 @@ Aside img {
     clear: both;
 }
 
-footer {
+#volver {
+    border-radius: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 50%;
     background-color: black;
-    text-align: center;
+    color: white;
+}
+
+#volver a{
+    padding: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+#volver a{
+    text-decoration: none;
+    color:white;
+}
+
+#volver:hover{
+    background-color: white;
+}
+
+#volver a:hover{
+    text-decoration: none;
+    color:black;
+}
+
+footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
 
 footer p{
-    background-color: rgb(255, 255, 255, 0);
+    background-color: black;
     text-align: center;
 }
